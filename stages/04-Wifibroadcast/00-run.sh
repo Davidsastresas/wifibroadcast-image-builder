@@ -19,7 +19,7 @@ log "Download OpenVG"
 sudo git clone https://github.com/RespawnDespair/openvg-font.git openvg
 
 log "Download Mavlink router"
-sudo git clone -b rock64 https://github.com/estechnical/mavlink-router.git
+sudo git clone -b  QH-Dev-QGroundControl  https://github.com/Davidsastresas/mavlink-router.git
 pushd mavlink-router
 sudo git submodule update --init
 #fix missing pymavlink
