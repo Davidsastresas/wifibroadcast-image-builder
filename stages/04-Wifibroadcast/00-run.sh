@@ -24,13 +24,13 @@ pushd mavlink-router
 sudo git submodule update --init
 #fix missing pymavlink
 pushd modules/mavlink
-sudo git clone --recurse-submodules  https://github.com/ArduPilot/pymavlink.git
+sudo git clone -b QH-Dev-OpenHD --recurse-submodules  https://github.com/Davidsastresas/pymavlink.git
 
 popd
 popd
 
 log "Download cmavnode"
-sudo git clone https://github.com/MonashUAS/cmavnode.git
+sudo git clone -b QH-Dev-Cmavnode https://github.com/Davidsastresas/cmavnode.git
 pushd cmavnode
 sudo git submodule update --init
 popd
@@ -63,7 +63,7 @@ log "Download EZWFB - hello_video"
 sudo git clone https://github.com/RespawnDespair/wifibroadcast-hello_video.git
 
 log "Download EZWFB - Splash"
-sudo git clone https://github.com/RespawnDespair/wifibroadcast-splash.git
+sudo git clone https://github.com/Davidsastresas/wifibroadcast-splash.git
 
 log "Download FLIR one"
 sudo git clone https://github.com/fnoop/flirone-v4l2.git
